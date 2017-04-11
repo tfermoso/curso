@@ -2,5 +2,6 @@
   Hola {{name}}!!
 </h1>
 
-<button  (click)="setName('Tomas')" > Hello Tomás</button>
+<button  (click)="setName('Tomas')" > Hello Tomas</button>
 <button (click)="resetName()">Reset</button>
+<input type="text" [(ngModel)]="name" >
