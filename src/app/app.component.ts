@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hola SpinOffPyme';
-  nombre="Tomás";
-  imgUrl="assets/img.png";
+
+  name:string='Anybody';
+
+  setName(name:string):void{
+    this.name=name;
+  }
+  resetName():void{
+    console.log(this.name);
+    this.name='Anybody';
+  }
 }
