@@ -11,6 +11,8 @@ export class AppComponent {
 
   name:string='Anybody';
   valorInicial=23;
+  ocultar=false;
+
   setName(name:string):void{
     this.name=name;
   }
@@ -20,6 +22,9 @@ export class AppComponent {
   }
   cambiar():void{
     this.valorInicial=122;
+  }
+  ocultarComponente():void{
+    this.ocultar? this.ocultar=false: this.ocultar=true;
   }
 }
 
