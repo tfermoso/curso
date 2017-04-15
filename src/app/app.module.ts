@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {LifeCycleComponent} from './life-cycle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
